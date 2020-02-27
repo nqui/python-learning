@@ -1,0 +1,12 @@
+#!/bin/sh
+'''exec' "/Users/jeje/Development/mcmaster/SFWRTECH 3PR3-Procedural and Object Oriented Programming Concepts/mcmaster/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from setuptools.command.easy_install import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
